@@ -6,7 +6,7 @@ on:
     branches: [main]
 
 jobs:
-  terraform:
+  format-terraform:
     runs-on: ubuntu-latest
 
     steps:
