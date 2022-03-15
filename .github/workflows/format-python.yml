@@ -23,16 +23,16 @@ jobs:
           pip install -U black==22.1.0 blackdoc==0.3.4 hacking==4.1.0 isort==5.10.1 mypy==0.931
 
       - name: Run black
-        run: black src/ --check --diff
+        run: black . --check --diff
 
       - name: Run blackdoc
-        run: blackdoc src/ --check --diff
+        run: blackdoc . --check --diff
 
       - name: Run flake8
-        run: flake8 src/
+        run: flake8 .
 
       - name: Run isort
-        run: isort src/ --check --diff
+        run: isort . --check --diff
 
       - name: Run mypy
-        run: mypy src/
+        run: mypy .
