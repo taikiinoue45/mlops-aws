@@ -1,0 +1,11 @@
+version: "3"
+services:
+  mlops-aws-terraform:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    container_name: mlops-aws-terraform
+    tty: true
+    stdin_open: true
+    volumes:
+      - ..:/app
